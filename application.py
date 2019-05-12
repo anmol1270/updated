@@ -14,6 +14,11 @@ app=application
 def homepage():
 	return render_template("index_new.html")
 
+@app.route('/ppt')
+
+def genppt():
+	return render_template("ppt_free.html")
+
 @app.route('/contact')
 
 def contactpage():
